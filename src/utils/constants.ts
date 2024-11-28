@@ -1,0 +1,9 @@
+export const MONTHS_PER_YEAR = 12;
+export const MIN_QUALIFYING_RATE = 5.25;
+export const GDS_RATIO = 0.39;
+export const TDS_RATIO = 0.44;
+export const DEFAULT_PROPERTY_TAX_RATE = 0.01; // Default 1% of property value annually
+export const DEFAULT_HEATING_COST_RATE = 0.001; // Default 0.1% of property value annually
+export const AMORTIZATION_YEARS = 30;
+export const DOWN_PAYMENT_OPTIONS = [5, 10, 15, 20];
+export const STRESS_TEST_BUFFER = 2; // 2% buffer for stress test

@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-amazon bg-amazon-light;
+  }
+}
+
+@layer components {
+  .amazon-button {
+    @apply bg-amazon-yellow hover:bg-amazon-yellow-hover text-amazon-blue font-medium py-1 px-4 rounded 
+    border border-[#FCD200] shadow-sm transition-colors cursor-pointer;
+  }
+
+  .amazon-link {
+    @apply text-amazon-link hover:text-amazon-link-hover hover:underline cursor-pointer;
+  }
+
+  .amazon-input {
+    @apply rounded border-gray-300 shadow-sm focus:border-amazon-orange focus:ring focus:ring-amazon-orange/20;
+  }
+}
+
+@media print {
+  @page {
+    size: letter;
+    margin: 1.5cm;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .print\:break-inside-avoid {
+    break-inside: avoid;
+  }
+
+  .recharts-wrapper {
+    width: 100% !important;
+    height: 400px !important;
+  }
+
+  .recharts-label {
+    fill: #666 !important;
+  }
+}
+
+.recharts-tooltip-label {
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
